@@ -27,7 +27,7 @@ class TopLeftRightFileListWidget(QWidget):
 
         applier = StyleApplier()
         btns = [self.__addBtn, self.__delBtn, self.__clearBtn]
-        applier.setCssFile('../style/button.css', btns)
+        applier.setCssFile('style/button.css', btns)
         applier.setIconAutomatically(['add', 'delete', 'clear'], btns)
         applier.setToolTip(['Add', 'Delete', 'Clear'], btns)
 
