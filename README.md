@@ -11,8 +11,8 @@ PyQt5 >= 5.8
 * <a href="https://github.com/yjg30737/simplePyQt5.git">simplePyQt5</a>
 
 ## Feature
-* Being able to add files, delete all files in the file list
-* Being able to drop the files
+* Being able to add files to list, select multiple files on the list to delete, clear list.
+* Being able to drop the files to the list
 * Being able to define the specific extensions to add with ```setExtList(ext_lst: list)```.
 * Check the duplicated files' name
 * Option to show files' name as absname/basename 
