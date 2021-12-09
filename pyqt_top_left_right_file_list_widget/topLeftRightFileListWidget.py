@@ -1,7 +1,8 @@
-from PyQt5.QtCore import pyqtSignal
-from PyQt5.QtWidgets import QWidget, QPushButton, QFileDialog, QCheckBox, QApplication
+import os
 
-from simplePyQt5.styleApplier import StyleApplier
+from PyQt5.QtCore import pyqtSignal
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QWidget, QPushButton, QFileDialog, QCheckBox
 
 from pyqt_top_left_right_file_list_widget.fileListWidget import FileListWidget
 from simplePyQt5.topLabelBottomWidget import TopLabelBottomWidget
@@ -25,11 +26,25 @@ class TopLeftRightFileListWidget(QWidget):
         self.__delBtn.clicked.connect(self.__delete)
         self.__clearBtn.clicked.connect(self.__clear)
 
-        applier = StyleApplier()
         btns = [self.__addBtn, self.__delBtn, self.__clearBtn]
-        applier.setCssFile('style/button.css', btns)
-        applier.setIconAutomatically(['add', 'delete', 'clear'], btns)
-        applier.setToolTip(['Add', 'Delete', 'Clear'], btns)
+
+        rel_dirname = os.path.dirname(os.path.relpath(__file__, os.getcwd()))
+
+        css_file_path = os.path.join(rel_dirname, r'style/button.css')
+        css_file = open(css_file_path)
+        css_code = css_file.read()
+        css_file.close()
+
+        for btn in btns:
+            btn.setStyleSheet(css_code)
+
+        self.__addBtn.setIcon(QIcon(os.path.join(rel_dirname, r'ico/add.png')))
+        self.__delBtn.setIcon(QIcon(os.path.join(rel_dirname, r'ico/delete.png')))
+        self.__clearBtn.setIcon(QIcon(os.path.join(rel_dirname, r'ico/clear.png')))
+
+        self.__addBtn.setToolTip('Add')
+        self.__delBtn.setToolTip('Delete')
+        self.__clearBtn.setToolTip('Clear')
 
         self.__fileListWidget = FileListWidget()
         self.__fileListWidget.currentItemChanged.connect(self.__currentItemChanged)
