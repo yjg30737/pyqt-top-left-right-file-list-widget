@@ -7,7 +7,7 @@ PyQt5 >= 5.8
 ## Setup
 ```pip3 install git+https://github.com/yjg30737/pyqt-top-left-right-file-list-widget.git --upgrade```
 
-## Included module
+## Included packages
 * <a href="https://github.com/yjg30737/simplePyQt5.git">simplePyQt5</a>
 * <a href="https://github.com/yjg30737/pyqt-file-list-widget.git">pyqt-file-list-widget</a>
 
