@@ -25,7 +25,7 @@ class TopLeftRightFileListWidget(QWidget):
         self.__clearBtn = SvgIconPushButton()
 
         self.__addBtn.setIcon('ico/add.svg')
-        self.__delBtn.setIcon('ico/remove.svg')
+        self.__delBtn.setIcon('ico/delete.svg')
         self.__clearBtn.setIcon('ico/clear.svg')
 
         self.__addBtn.clicked.connect(self.__add)
