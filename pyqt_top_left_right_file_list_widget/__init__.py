@@ -1,1 +1,1 @@
-from .topLeftRightFileListWidget import *
+from .topLeftRightFileListWidget import TopLeftRightFileListWidget
