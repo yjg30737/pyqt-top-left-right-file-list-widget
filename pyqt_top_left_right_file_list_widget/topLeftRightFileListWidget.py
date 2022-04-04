@@ -61,7 +61,7 @@ class TopLeftRightFileListWidget(QWidget):
         self.__delBtn.setEnabled(f1 and f2)
         self.__clearBtn.setEnabled(f1)
 
-    def setLabel(self, text):
+    def setLabel(self, text: str):
         self.__mainWidget.setLabel(text)
 
     def setExtensions(self, extensions: list):
