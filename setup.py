@@ -15,6 +15,6 @@ setup(
         'PyQt5>=5.8',
         'simplePyQt5 @ git+https://git@github.com/yjg30737/simplePyQt5.git@master',
         'pyqt-file-list-widget @ git+https://git@github.com/yjg30737/pyqt-file-list-widget.git@main',
-        'pyqt-resource-helper @ git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main'
+        'pyqt-svg-icon-pushbutton @ git+https://git@github.com/yjg30737/pyqt-svg-icon-pushbutton.git@main'
     ]
 )
