@@ -5,6 +5,7 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QWidget, QPushButton, QFileDialog, QCheckBox
 
 from pyqt_file_list_widget.fileListWidget import FileListWidget
+from pyqt_resource_helper import PyQtResourceHelper
 from simplePyQt5.topLabelBottomWidget import TopLabelBottomWidget
 
 
@@ -28,19 +29,8 @@ class TopLeftRightFileListWidget(QWidget):
 
         btns = [self.__addBtn, self.__delBtn, self.__clearBtn]
 
-        rel_dirname = os.path.dirname(os.path.relpath(__file__, os.getcwd()))
-
-        css_file_path = os.path.join(rel_dirname, r'style/button.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
-
-        for btn in btns:
-            btn.setStyleSheet(css_code)
-
-        self.__addBtn.setIcon(QIcon(os.path.join(rel_dirname, r'ico/add.png')))
-        self.__delBtn.setIcon(QIcon(os.path.join(rel_dirname, r'ico/delete.png')))
-        self.__clearBtn.setIcon(QIcon(os.path.join(rel_dirname, r'ico/clear.png')))
+        PyQtResourceHelper.setStyleSheet(btns, ['style/button.css'])
+        PyQtResourceHelper.setIcon(btns, ['ico/add.png', 'ico/delete.png', 'ico/clear.png'])
 
         self.__addBtn.setToolTip('Add')
         self.__delBtn.setToolTip('Delete')
