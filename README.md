@@ -38,19 +38,19 @@ if __name__ == "__main__":
 
 Result
 
-![image](https://user-images.githubusercontent.com/55078043/145379025-1c7c075f-fbab-45c4-bcc3-d5ebc5ab00b5.png)
+![image](https://user-images.githubusercontent.com/55078043/161471903-e036a628-85b9-4bf7-bb55-d73b41596cb8.png)
 
 Show file name only
 
-![image](https://user-images.githubusercontent.com/55078043/145379084-3e6dfc8e-4c8f-4c0c-848f-73816ae5a651.png)
+![image](https://user-images.githubusercontent.com/55078043/161471920-4e8dace5-00ea-46e9-8652-731a1dc488bf.png)
 
 You can select multiple files on the list. If at least one file is selected, delete button(red dash icon) will be clickable.
 
-![image](https://user-images.githubusercontent.com/55078043/145379667-e3a7d67e-a7b5-4cb5-9d08-c002d2398fc7.png)
+![image](https://user-images.githubusercontent.com/55078043/161471941-077dc58a-6490-4148-82eb-5ece2d31e13a.png)
 
 Click it and selected ones will be removed from the list.
 
-![image](https://user-images.githubusercontent.com/55078043/145379940-11289218-2b1a-406b-98d8-f4a9ec31fc97.png)
+![image](https://user-images.githubusercontent.com/55078043/161472073-794cdaca-2d91-4647-bb3a-3a4c74db3902.png)
 
 If some of files you want to add already exist in the list, Notice dialog will pop up to show you which files exist in the list. If you click OK, it will add files which are not duplicated. Otherwise none of files you want to add will be on the list.
 
