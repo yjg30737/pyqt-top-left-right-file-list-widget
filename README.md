@@ -12,12 +12,13 @@ PyQt5 >= 5.8
 * <a href="https://github.com/yjg30737/pyqt-file-list-widget.git">pyqt-file-list-widget</a>
 * <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a>
 
-## Feature
+## Detailed Description
 * Being able to add files to list, select multiple files on the list to delete, clear list.
 * Being able to drop the files to the list
-* Being able to define the specific extensions to add with ```setExtList(ext_lst: list)```.
 * Check the duplicated files' name
-* Option to show files' name as absname/basename 
+* User can able to choose the option to show files' name as absolute name or base name with "Show file name only" checkbox. 
+* `setLabel(text: str)` - Set the label at the left side.
+* `setExtensions(ext_lst: list)` - Define the specific extensions to add. 
 
 ## Example
 Code Example
