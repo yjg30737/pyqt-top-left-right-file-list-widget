@@ -1,11 +1,7 @@
-import os
-
 from PyQt5.QtCore import pyqtSignal
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QWidget, QPushButton, QFileDialog, QCheckBox
+from PyQt5.QtWidgets import QWidget, QFileDialog, QCheckBox
 
 from pyqt_file_list_widget.fileListWidget import FileListWidget
-from pyqt_resource_helper import PyQtResourceHelper
 from pyqt_svg_icon_pushbutton import SvgIconPushButton
 from simplePyQt5.topLabelBottomWidget import TopLabelBottomWidget
 
