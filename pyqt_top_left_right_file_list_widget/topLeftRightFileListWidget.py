@@ -40,7 +40,7 @@ class TopLeftRightFileListWidget(QWidget):
         self.__fileListWidget.currentItemChanged.connect(self.__currentItemChanged)
 
         self.__onlyFileNameChkBox = QCheckBox('Show file name only')
-        self.__onlyFileNameChkBox.stateChanged.connect(self.__fileListWidget.setOnlyFileName)
+        self.__onlyFileNameChkBox.stateChanged.connect(self.__fileListWidget.setFilenameOnly)
 
         self.__mainWidget = TopLabelBottomWidget()
         self.__mainWidget.setLabel('List of files')
@@ -62,7 +62,7 @@ class TopLeftRightFileListWidget(QWidget):
         f2 = True if self.__fileListWidget.currentItem() else False
         self.__delBtn.setEnabled(f1 and f2)
         self.__clearBtn.setEnabled(f1)
-        
+
     def setLabel(self, text):
         self.__mainWidget.setLabel(text)
 
@@ -74,12 +74,12 @@ class TopLeftRightFileListWidget(QWidget):
         filenames = QFileDialog.getOpenFileNames(self, 'Open Files', '', ext_lst)
         if filenames[0]:
             filenames = filenames[0]
-            self.__fileListWidget.setDatas(filenames)
+            self.__fileListWidget.addFilenames(filenames)
             self.fileAdded.emit(filenames)
             self.__btnToggled()
 
     def __delete(self):
-        filenames = self.__fileListWidget.getSelectedFileNames()
+        filenames = self.__fileListWidget.getSelectedFilenames()
         self.__fileListWidget.removeSelectedRows()
         self.__btnToggled()
 
