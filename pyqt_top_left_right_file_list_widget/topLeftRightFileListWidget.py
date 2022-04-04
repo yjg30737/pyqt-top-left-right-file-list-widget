@@ -12,7 +12,7 @@ class TopLeftRightFileListWidget(QWidget):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.__ext_lst = ''
+        self.__extensions = ''
         self.__initUi()
 
     def __initUi(self):
@@ -64,11 +64,11 @@ class TopLeftRightFileListWidget(QWidget):
     def setLabel(self, text):
         self.__mainWidget.setLabel(text)
 
-    def setStrExtFilesToOpen(self, ext_lst):
-        self.__ext_lst = ext_lst
+    def setExtensions(self, extensions: list):
+        self.__extensions = extensions
 
     def __add(self):
-        ext_lst = self.__ext_lst if self.__ext_lst else 'All Files (*.*)'
+        ext_lst = self.__extensions if self.__extensions else 'All Files (*.*)'
         filenames = QFileDialog.getOpenFileNames(self, 'Open Files', '', ext_lst)
         if filenames[0]:
             filenames = filenames[0]
