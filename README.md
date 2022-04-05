@@ -18,7 +18,9 @@ PyQt5 >= 5.8
 * Check the duplicated files' name
 * User can able to choose the option to show files' name as absolute name or base name with "Show file name only" checkbox. 
 * `setLabel(text: str)` - Set the label at the left side.
-* `setExtensions(ext_lst: list)` - Define the specific extensions to add. 
+* `setExtensions(ext_lst: list)` - Define the specific extensions to add.
+* `setDuplicateEnabled(f: bool)` - Allow to add duplicate name to list.
+* `isDuplicateEnabled() -> bool` 
 
 ## Example
 Code Example
