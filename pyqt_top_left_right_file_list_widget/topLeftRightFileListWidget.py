@@ -67,6 +67,12 @@ class TopLeftRightFileListWidget(QWidget):
     def setExtensions(self, extensions: list):
         self.__extensions = extensions
 
+    def isDuplicateEnabled(self) -> bool:
+        return self.__duplicate_flag
+
+    def setDuplicateEnabled(self, f: bool):
+        self.__fileListWidget.setDuplicateEnabled(f)
+
     def __add(self):
         ext_lst = self.__extensions if self.__extensions else 'All Files (*.*)'
         filenames = QFileDialog.getOpenFileNames(self, 'Open Files', '', ext_lst)
