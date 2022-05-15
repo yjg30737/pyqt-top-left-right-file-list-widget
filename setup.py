@@ -13,8 +13,8 @@ setup(
     url='https://github.com/yjg30737/pyqt-top-left-right-file-list-widget.git',
     install_requires=[
         'PyQt5>=5.8',
-        'simplePyQt5 @ git+https://git@github.com/yjg30737/simplePyQt5.git@master',
-        'pyqt-file-list-widget @ git+https://git@github.com/yjg30737/pyqt-file-list-widget.git@main',
-        'pyqt-svg-icon-pushbutton @ git+https://git@github.com/yjg30737/pyqt-svg-icon-pushbutton.git@main'
+        'simplePyQt5>=0.0.1',
+        'pyqt-file-list-widget>=0.0.1',
+        'pyqt-svg-icon-pushbutton>=0.0.1'
     ]
 )
