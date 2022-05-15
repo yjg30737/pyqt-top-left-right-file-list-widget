@@ -60,7 +60,5 @@ If some of files you want to add already exist in the list, Notice dialog will p
 
 ## Note
 
-I'm currently working with "Don't ask again" feature. Hope you don't mind. 
-
-Well, One more thing. Duplicated files notice dialog's "show file name only" is not properly connected with main file list widget. I'm currently working with this too.
+I'm currently working with "Don't ask again" feature. Hope you don't mind.
 
