@@ -2,7 +2,7 @@ from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import QWidget, QFileDialog, QCheckBox
 
 from pyqt_file_list_widget.fileListWidget import FileListWidget
-from pyqt_svg_icon_pushbutton import SvgIconPushButton
+from pyqt_svg_button import SvgButton
 from simplePyQt5.topLabelBottomWidget import TopLabelBottomWidget
 
 
@@ -16,9 +16,9 @@ class TopLeftRightFileListWidget(QWidget):
         self.__initUi()
 
     def __initUi(self):
-        self.__addBtn = SvgIconPushButton()
-        self.__delBtn = SvgIconPushButton()
-        self.__clearBtn = SvgIconPushButton()
+        self.__addBtn = SvgButton()
+        self.__delBtn = SvgButton()
+        self.__clearBtn = SvgButton()
 
         self.__addBtn.setIcon('ico/add.svg')
         self.__delBtn.setIcon('ico/delete.svg')
