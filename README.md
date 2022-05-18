@@ -10,7 +10,7 @@ PyQt5 >= 5.8
 ## Included packages
 * <a href="https://github.com/yjg30737/simplePyQt5.git">simplePyQt5</a>
 * <a href="https://github.com/yjg30737/pyqt-file-list-widget.git">pyqt-file-list-widget</a>
-* <a href="https://github.com/yjg30737/pyqt-svg-icon-pushbutton.git">pyqt-svg-icon-pushbutton</a>
+* <a href="https://github.com/yjg30737/pyqt-svg-button.git">pyqt-svg-button</a>
 
 ## Detailed Description
 * Being able to add files to list, select multiple files on the list to delete, clear list.
